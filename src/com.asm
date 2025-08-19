@@ -6,6 +6,7 @@ org 100h	; entry point "address"
 
 ; entry point
 _start:
+	call serial_init
 	call main	; call main
 	jmp $		; loop forever
 
@@ -16,5 +17,6 @@ _start:
 %include 'sys/snd.asm'
 %include 'sys/vga.asm'
 %include 'main.asm'
+%include "sys/serial.inc"
 
 times IMAGE_SIZE - ($ - $$) db 0	; pad to IMAGE_SIZE
