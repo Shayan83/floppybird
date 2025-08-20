@@ -17,6 +17,6 @@ _start:
 %include 'sys/snd.asm'
 %include 'sys/vga.asm'
 %include 'main.asm'
-%include "sys/serial.inc"
+%include "sys/serial.asm"
 
 times IMAGE_SIZE - ($ - $$) db 0	; pad to IMAGE_SIZE

@@ -20,7 +20,8 @@ KERNEL 		= src/sys/rnd.asm \
 			  src/sys/snd.asm \
 			  src/sys/tmr.asm \
 			  src/sys/txt.asm \
-			  src/sys/vga.asm
+			  src/sys/vga.asm \
+			  src/sys/serial.asm
 GAME 		= src/main.asm  \
 			  src/game/background.asm \
 			  src/game/bird.asm \
